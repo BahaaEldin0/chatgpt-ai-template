@@ -57,11 +57,10 @@ export default function SidebarDocs() {
           Go unlimited with PRO
         </Text>
         <Text fontSize="14px" color={'white'} mb="14px" textAlign="center">
-          Get your AI Project to another level and start doing more with Horizon
-          AI Template PRO!
+        Give your Assistant Unlimited Resources & Unlock Plugins with Logisti Pro!
         </Text>
       </Flex>
-      <Link href="https://horizon-ui.com/ai-template" isExternal>
+      <Link href="">
         <Button
           bg="whiteAlpha.300"
           _hover={{ bg: 'whiteAlpha.200' }}

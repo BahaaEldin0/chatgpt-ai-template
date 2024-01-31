@@ -73,7 +73,7 @@ function SidebarContent(props: SidebarContent) {
       <Box mt="60px" width={'100%'} display={'flex'} justifyContent={'center'}>
         <SidebarCard />
       </Box>
-      <APIModal setApiKey={setApiKey} sidebar={true} />
+      {/* <APIModal setApiKey={setApiKey} sidebar={true} /> */}
       <Flex
         mt="8px"
         justifyContent="center"
@@ -84,7 +84,7 @@ function SidebarContent(props: SidebarContent) {
       >
         <NextAvatar h="34px" w="34px" src={avatar4} me="10px" />
         <Text color={textColor} fontSize="xs" fontWeight="600" me="10px">
-          Adela Parkson
+          Hhaitham Sultan
         </Text>
         <Menu>
           <MenuButton
@@ -143,23 +143,7 @@ function SidebarContent(props: SidebarContent) {
                 >
                   Profile Settings
                 </Text>
-                <Link
-                  ms="auto"
-                  isExternal
-                  href="https://horizon-ui.com/ai-template"
-                >
-                  <Badge
-                    display={{ base: 'flex', lg: 'none', xl: 'flex' }}
-                    colorScheme="brand"
-                    borderRadius="25px"
-                    color="brand.500"
-                    textTransform={'none'}
-                    letterSpacing="0px"
-                    px="8px"
-                  >
-                    PRO
-                  </Badge>
-                </Link>
+                
               </Flex>
             </Box>
             <Box mb="30px">
@@ -175,23 +159,7 @@ function SidebarContent(props: SidebarContent) {
                 <Text color={gray} fontWeight="500" fontSize="sm" opacity="0.4">
                   History
                 </Text>
-                <Link
-                  ms="auto"
-                  isExternal
-                  href="https://horizon-ui.com/ai-template"
-                >
-                  <Badge
-                    display={{ base: 'flex', lg: 'none', xl: 'flex' }}
-                    colorScheme="brand"
-                    borderRadius="25px"
-                    color="brand.500"
-                    textTransform={'none'}
-                    letterSpacing="0px"
-                    px="8px"
-                  >
-                    PRO
-                  </Badge>
-                </Link>
+                
               </Flex>
             </Box>
             <Box mb="30px">
@@ -207,23 +175,7 @@ function SidebarContent(props: SidebarContent) {
                 <Text color={gray} fontWeight="500" fontSize="sm" opacity="0.4">
                   Usage
                 </Text>
-                <Link
-                  ms="auto"
-                  isExternal
-                  href="https://horizon-ui.com/ai-template"
-                >
-                  <Badge
-                    display={{ base: 'flex', lg: 'none', xl: 'flex' }}
-                    colorScheme="brand"
-                    borderRadius="25px"
-                    color="brand.500"
-                    textTransform={'none'}
-                    letterSpacing="0px"
-                    px="8px"
-                  >
-                    PRO
-                  </Badge>
-                </Link>
+                
               </Flex>
             </Box>
             <Box>
@@ -239,23 +191,7 @@ function SidebarContent(props: SidebarContent) {
                 <Text color={gray} fontWeight="500" fontSize="sm" opacity="0.4">
                   My Plan
                 </Text>
-                <Link
-                  ms="auto"
-                  isExternal
-                  href="https://horizon-ui.com/ai-template"
-                >
-                  <Badge
-                    display={{ base: 'flex', lg: 'none', xl: 'flex' }}
-                    colorScheme="brand"
-                    borderRadius="25px"
-                    color="brand.500"
-                    textTransform={'none'}
-                    letterSpacing="0px"
-                    px="8px"
-                  >
-                    PRO
-                  </Badge>
-                </Link>
+                
               </Flex>
             </Box>
           </MenuList>
