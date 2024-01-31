@@ -40,7 +40,7 @@ export const OpenAIStream = async (
 
   const encoder = new TextEncoder();
   const decoder = new TextDecoder();
-
+  console.log("inside chatStream file")
   if (res.status !== 200) {
     console.log("error in chatStream file")
     const statusText = res.statusText;
