@@ -27,7 +27,7 @@ export const OpenAIStream = async (
   const res = await fetch(`https://api.openai.com/v1/chat/completions`, {
     headers: {
       'Content-Type': 'application/json',
-      Authorization: `Bearer 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`,
+      Authorization: `Bearer ${key}`,
     },
     method: 'POST',
     body: JSON.stringify({
@@ -42,6 +42,7 @@ export const OpenAIStream = async (
   const decoder = new TextDecoder();
 
   if (res.status !== 200) {
+    console.log("error in chatStream file")
     const statusText = res.statusText;
     const result = await res.body?.getReader().read();
     throw new Error(
@@ -50,7 +51,7 @@ export const OpenAIStream = async (
       }`,
     );
   }
-  console.log(res);
+
   const stream = new ReadableStream({
     async start(controller) {
       const onParse = (event: ParsedEvent | ReconnectInterval) => {
