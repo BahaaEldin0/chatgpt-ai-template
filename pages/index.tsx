@@ -105,7 +105,7 @@ export default function Chat(props: { apiKeyApp: string }) {
       console.log(response);
       if (response) {
         alert(
-          'Something went wrong!',
+          'Something went wrong! in response ',
         );
       }
       return;
@@ -115,7 +115,7 @@ export default function Chat(props: { apiKeyApp: string }) {
 
     if (!data) {
       setLoading(false);
-      alert('Something went wrong');
+      alert('Something went wrongin data ');
       return;
     }
 
