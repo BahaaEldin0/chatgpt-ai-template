@@ -15,7 +15,7 @@ const handler = async (req: Request): Promise<Response> => {
 
     return new Response(stream);
   } catch (error) {
-    console.error(error);
+    console.log(error + "inside chatAPI file");
     return new Response('Error form chatAPI', { status: 500 });
   }
 };

@@ -102,7 +102,6 @@ export default function Chat(props: { apiKeyApp: string }) {
 
     if (!response.ok) {
       setLoading(false);
-      console.log(response);
       if (response) {
         alert(
           'Something went wrong! in response ',
