@@ -8,18 +8,9 @@ export const config = {
 const handler = async (req: Request): Promise<Response> => {
   try {
     const { inputCode, model, apiKey } = (await req.json()) as ChatBody;
-    let apiKeyFinal;
+    let apiKeyFinal = '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';
 
-    if (apiKey) {
-      apiKeyFinal = apiKey;
-    } else {
-      apiKeyFinal = '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';
-    }
-
-    if (!apiKey) {
-      return new Response('API key not found', { status: 500 });
-    }
-
+    
     const stream = await OpenAIStream(inputCode, model, apiKeyFinal);
 
     return new Response(stream);
