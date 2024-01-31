@@ -25,7 +25,7 @@ const handler = async (req: Request): Promise<Response> => {
     return new Response(stream);
   } catch (error) {
     console.error(error);
-    return new Response('Error', { status: 500 });
+    return new Response('Error form chatAPI', { status: 500 });
   }
 };
 
