@@ -50,7 +50,7 @@ export const OpenAIStream = async (
       }`,
     );
   }
-
+  console.log(res.body);
   const stream = new ReadableStream({
     async start(controller) {
       const onParse = (event: ParsedEvent | ReconnectInterval) => {
