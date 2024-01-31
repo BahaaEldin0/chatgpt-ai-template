@@ -104,7 +104,7 @@ export default function Chat(props: { apiKeyApp: string }) {
       setLoading(false);
       if (response) {
         alert(
-          'Something went wrong went fetching from the API. Make sure to use a valid API key.',
+          'Something went wrong!',
         );
       }
       return;
@@ -217,7 +217,7 @@ export default function Chat(props: { apiKeyApp: string }) {
                   color={iconColor}
                 />
               </Flex>
-              GPT-3.5
+              Logisti AI
             </Flex>
             <Flex
               cursor={'pointer'}
@@ -250,11 +250,11 @@ export default function Chat(props: { apiKeyApp: string }) {
                   color={iconColor}
                 />
               </Flex>
-              GPT-4
+              Logisti Pro
             </Flex>
           </Flex>
 
-          <Accordion color={gray} allowToggle w="100%" my="0px" mx="auto">
+          {model === 'gpt-4' && <Accordion color={gray} allowToggle w="100%" my="0px" mx="auto">
             <AccordionItem border="none">
               <AccordionButton
                 borderBottom="0px solid"
@@ -277,11 +277,11 @@ export default function Chat(props: { apiKeyApp: string }) {
                   fontSize="sm"
                   textAlign={'center'}
                 >
-                  This is a cool text example.
+                  New plugins will be added soon!
                 </Text>
               </AccordionPanel>
             </AccordionItem>
-          </Accordion>
+          </Accordion>}
         </Flex>
         {/* Main Box */}
         <Flex
@@ -412,19 +412,9 @@ export default function Chat(props: { apiKeyApp: string }) {
           alignItems="center"
         >
           <Text fontSize="xs" textAlign="center" color={gray}>
-            Free Research Preview. ChatGPT may produce inaccurate information
-            about people, places, or facts.
+          Logisti AI. The First AI Assistant in Logistics in Middle East and Africa.
           </Text>
-          <Link href="https://help.openai.com/en/articles/6825453-chatgpt-release-notes">
-            <Text
-              fontSize="xs"
-              color={textColor}
-              fontWeight="500"
-              textDecoration="underline"
-            >
-              ChatGPT May 12 Version
-            </Text>
-          </Link>
+          
         </Flex>
       </Flex>
     </Flex>
